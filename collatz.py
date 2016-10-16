@@ -10,14 +10,17 @@ def collatz(number):
 		
     
 
-x = int(input('Type a number: > '))
+x = input('Type a number: > ')
 attempts = 0
 
-try:
-	while x != 1:
-		x = collatz(x)
-		print(x)
-		attempts += 1
-except ValueError:
+if x.isdigit():
+
+        x = int(x)
+        while x != 1:
+                print(collatz(x))
+                x = collatz(x)
+                attempts += 1
+                
+        print('Finally finished! It took us %s attempts!' % attempts)
+else:
 	print('%s is not a number!' % x)
-print('Finally finished! It took us %s attempts!' % attempts)
