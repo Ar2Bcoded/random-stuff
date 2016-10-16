@@ -1,4 +1,4 @@
-# collaztz sequence - always evaluates to 1.
+# collatz sequence - always evaluates to 1.
 def collatz(number):
 	if number % 2 == 0:
 		number //= 2
