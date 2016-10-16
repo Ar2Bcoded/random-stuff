@@ -4,12 +4,9 @@ def collatz(number):
 		number //= 2
 	else:
 		number = 3 * number + 1
-      
 	return number
 
 		
-    
-
 x = input('Type a number: > ')
 attempts = 0
 
