@@ -1,2 +1,3 @@
 # random-stuff
-small things in one place
+Small things in one place.
+I'm a beginner.
